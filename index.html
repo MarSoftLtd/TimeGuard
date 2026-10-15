@@ -1,0 +1,110 @@
+Privacy Policy – TimeGuard
+Last updated: October 15, 2026
+
+TimeGuard is an Android application that helps users monitor application usage, set time limits and schedules, and manage access to selected applications. This Privacy Policy describes the information used by TimeGuard, how it is processed, and the choices available to users.
+
+1. Information Accessed to Provide TimeGuard Features
+With the permissions and settings enabled by the user, TimeGuard may access information about installed and active applications, their identifiers, usage duration, activity transitions, and relevant timestamps. This information is used to display usage statistics and enforce the limits and schedules selected by the user.
+
+2. Accessibility Service
+TimeGuard uses an Android Accessibility Service to identify the application and window currently in use and to help enforce user-configured restrictions. The service may obtain application identifiers, window focus information, and window position and dimensions, including information relevant to picture-in-picture and split-screen modes.
+
+The Android Accessibility framework can technically expose window content. However, TimeGuard's current implementation does not read the text or buttons displayed inside other applications. The service is used for application monitoring and restriction functionality, not to collect messages or the content of other applications.
+
+Users can disable the service at any time in Android Accessibility settings. Disabling it may prevent TimeGuard from enforcing certain restrictions.
+
+3. Usage Access
+When Usage Access permission is granted, TimeGuard reads Android usage information, including application identifiers, usage durations, activity events and timestamps. Activity class names may be processed to reconstruct usage durations accurately.
+
+This information is used to calculate usage time, show statistics and determine when configured limits have been reached. The application does not intentionally submit this usage history to Google advertising or analytics SDKs.
+
+Users can revoke Usage Access through Android settings. Some monitoring and reporting features may then stop working correctly.
+
+4. Information Stored on the Device
+TimeGuard stores information needed for its functions locally, which may include:
+
+Applications selected for monitoring, their names and identifiers;
+Usage limits, schedules, bonuses, monitoring periods and related configuration;
+Usage history and statistics, including time intervals, durations and time-zone information;
+Application preferences, permission-related records and consent choices;
+A protected representation of the application PIN.
+The PIN is not stored in plain text. TimeGuard uses a salted PBKDF2 hash to verify it.
+
+The application's principal private data and databases are explicitly excluded from Android backup and device transfer under its backup rules. This does not necessarily cover every file managed by third-party SDKs.
+
+5. Advertising and Consent Management
+TimeGuard uses Google AdMob to request and display advertising. Google's advertising SDK may process information such as IP address, device and application information, identifiers and advertising interactions for purposes including ad delivery, measurement and fraud prevention, subject to applicable settings and consent requirements.
+
+TimeGuard also uses Google's User Messaging Platform (UMP) to obtain or manage advertising consent where applicable. UMP may communicate with Google to retrieve consent requirements and forms. TimeGuard does not intentionally supply users' PINs, monitored-app usage history or phone numbers entered in the TimeGuard Alert preview to AdMob or UMP.
+
+For information about Google's advertising data practices, see Google's privacy information: https://policies.google.com/privacy
+
+6. Optional Firebase Analytics
+TimeGuard includes Firebase Analytics for limited application-feature measurement. Analytics collection is disabled by default and is enabled only after the user provides separate consent in the application.
+
+The current implementation may log these TimeGuard Alert preview events when analytics consent is granted:
+
+alert_opened
+alert_options_selected
+alert_price_viewed
+alert_continue_clicked
+TimeGuard does not attach entered phone numbers, the PIN or the user's selected preview options as parameters to these events. Firebase Analytics may independently process app-instance identifiers, device or application information, and automatically collected events. Such data should not be considered completely anonymous.
+
+Users may withdraw Analytics consent in TimeGuard settings. The application then disables Analytics collection and resets its local Analytics data. This action does not itself erase information already received and retained by Google.
+
+7. TimeGuard Alert Preview
+TimeGuard Alert is currently a preview of a potential future feature. It does not send SMS messages, activate paid subscriptions or provide an active remote monitoring service.
+
+If a user enters phone numbers in the preview, the application processes them temporarily to check their format. These numbers are not saved or transmitted by the current preview implementation, and the fields are cleared when the preview closes.
+
+If this feature is introduced in a future release, this Privacy Policy will be updated to describe any additional processing, service providers, communications and retention practices before the feature is offered.
+
+8. Other Device Features and Exports
+The optional Audio Pause feature uses local information about media sessions and playback state. The current implementation does not transmit this information to a developer-operated server.
+
+If the user chooses to export statistics, the application may create a temporary export file. Exports older than seven days are cleaned up when a new export is generated. Users can explicitly share an export through another application; after sharing, that receiving application's privacy practices may apply.
+
+9. Third-Party Services and External Processing
+TimeGuard currently integrates Google services that may process technical, advertising, consent or usage-measurement information independently, including:
+
+Google AdMob;
+Google User Messaging Platform (UMP);
+Firebase Analytics;
+Google Play services, where used by these integrations.
+TimeGuard does not currently implement a developer-operated backend for uploading monitored-app usage histories or a service for sending SMS alerts. The exact data transmitted internally by third-party SDKs and the applicable server-side retention periods are governed by the relevant providers' configurations and policies.
+
+Google's privacy policy is available at https://policies.google.com/privacy and Firebase privacy information at https://firebase.google.com/support/privacy.
+
+10. Data Retention and Deletion
+TimeGuard's private local settings and usage data generally remain on the device until removed through application functions, Android's clear-storage controls or application uninstallation, as applicable.
+
+Clearing application storage or uninstalling TimeGuard removes its locally stored private data. This does not automatically delete exported files already shared with other applications or data previously processed by Google services. The retention and deletion of third-party service data are subject to those services' policies and applicable controls.
+
+11. Permissions and User Controls
+Users can manage or revoke Accessibility, Usage Access and notification permissions through Android settings. Revoking permissions may reduce or disable features that depend on them.
+
+Where available, users can review advertising privacy choices through the application's Privacy Options control. Firebase Analytics consent can be withdrawn separately through TimeGuard settings.
+
+12. Data Sharing and Sale
+TimeGuard does not intentionally send the contents of its local monitored-app usage history or the user's PIN to advertising or analytics SDKs. TimeGuard does not operate a service to sell this local usage history.
+
+Google advertising and analytics services may process information under their own policies, as described above. User-directed sharing of exported statistics is controlled by the user.
+
+13. Security
+TimeGuard uses Android application security mechanisms and stores the PIN as a salted PBKDF2 hash rather than plain text. The application's principal private data is excluded from Android backup and device transfer through its configured rules.
+
+No software or electronic storage method can guarantee absolute security.
+
+14. Privacy Rights
+Depending on applicable law, users may have rights to access, correct, delete or restrict the processing of personal data, and to withdraw consent where processing is based on consent.
+
+Users control locally stored TimeGuard data through application and Android controls. Data processed independently by Google services may also be subject to Google's privacy controls and request mechanisms. Users may contact the developer with privacy questions or requests using the contact information below.
+
+15. Children's Privacy
+TimeGuard is intended to help users manage application usage. Any use involving children should be supervised by an appropriate parent or guardian, and the app's advertising, consent and distribution settings must be configured consistently with the audience selected in Google Play Console. This policy does not represent TimeGuard as a child-directed service.
+
+16. Changes to This Policy
+This Privacy Policy may be updated when TimeGuard's functionality, third-party integrations or applicable requirements change. The latest revision date will appear at the beginning of this document.
+
+17. Contact
+For questions about TimeGuard or this Privacy Policy, contact the developer using the support email address listed on TimeGuard's Google Play store listing.
